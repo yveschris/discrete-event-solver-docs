@@ -9,7 +9,7 @@
 基本代码
 ------------
 
-.. code-block:: Matlab
+.. code-block:: matlab
    clear
    % clc
    seed = 42;  % select a seed
