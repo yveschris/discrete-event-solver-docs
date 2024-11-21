@@ -16,9 +16,7 @@
     y = sin(x);
     plot(x, y);
     title('Sine Wave');   
-
-
-clear
+    clear
    % clc
    seed = 42;  % select a seed
    rng(seed);
