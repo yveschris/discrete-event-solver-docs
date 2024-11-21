@@ -17,30 +17,28 @@
     plot(x, y);
     title('Sine Wave');   
     clear
-   % clc
-   seed = 42;  % select a seed
-   rng(seed);
+    % clc
+    seed = 42;  % select a seed
+    rng(seed);
+    pkts_type = 'exponential';   % packet size type
+    inta_type = 'exponential';   % interarrival time type
+    router_num = 2;
+    host_num = 0;  % zero means using the default value
 
-   pkts_type = 'exponential';   % packet size type
-   inta_type = 'exponential';   % interarrival time type
+    gamma = 0.05;
 
-   router_num = 2;
-   host_num = 0;  % zero means using the default value
+    edge_spds_r = 1;  % edge rates for routers
+    dropprobs_r = 0;
 
-   gamma = 0.05;
+    edge_spds_rh = Inf;
+    dropprobs_rh = 0;
 
-   edge_spds_r = 1;  % edge rates for routers
-   dropprobs_r = 0;
+    avg_size = 1;  % unit is bit, while the size of payload is byte.
+    pld_avg_size = avg_size / 8;
 
-   edge_spds_rh = Inf;
-   dropprobs_rh = 0;
-
-   avg_size = 1;  % unit is bit, while the size of payload is byte.
-   pld_avg_size = avg_size / 8;
-
-   start_time = 0;
-   end_time = 1e3;
-   % duplexd = true;
+    start_time = 0;
+    end_time = 1e3;
+    % duplexd = true;
 
    attmt_assumpt = 'evenly';
    topotype = 'grid';
