@@ -9,8 +9,6 @@
 基本代码
 ------------
 
-To use Lumache, first install it using pip:
-
 .. code-block:: Matlab
    clear
    % clc
