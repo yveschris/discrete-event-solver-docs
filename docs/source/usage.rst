@@ -9,14 +9,6 @@
 基本代码
 ------------
 
-.. code-block:: matlab
-
-    % Example MATLAB script
-    x = 0:0.1:2*pi;
-    y = sin(x);
-    plot(x, y);
-    title('Sine Wave');
-
 .. code-block:: Matlab
    clear
    % clc
