@@ -10,7 +10,15 @@
 ------------
 
 .. code-block:: matlab
-   clear
+
+    % Example MATLAB script
+    x = 0:0.1:2*pi;
+    y = sin(x);
+    plot(x, y);
+    title('Sine Wave');   
+
+
+clear
    % clc
    seed = 42;  % select a seed
    rng(seed);
